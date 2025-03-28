@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 export default function ListaUsuarios() {
     interface Usuario {
-        id: number
-        name: string
-        email: string
-        phone: string
+        id: number;
+        name: string;
+        email: string;
+        phone: string;
     }
 
     const [usuarios, setUsuarios] = useState<Usuario[]>([]);
@@ -40,7 +40,7 @@ export default function ListaUsuarios() {
             }
             {erro !== "" && <p>{erro}</p>}
             {
-                function () {
+                (function () {
                     if (usuarios.length > 0) {
                         return usuarios.map(function (usuario) {
                             return (
@@ -52,8 +52,9 @@ export default function ListaUsuarios() {
                             )
                         })
                     }
-                }
-            }
+                    return null
+                })
+                    ()}
         </>
     )
 }

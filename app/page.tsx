@@ -1,10 +1,13 @@
 import '../app/globals.css';
 import ListaUsuarios from "../components/ListaUsuarios";
 
-function Page() {
+function Home() {
   return (
-    <ListaUsuarios />
+    <>
+      <h1>CONSUMINDO API</h1>
+      <ListaUsuarios />
+    </>
   )
 }
 
-export default Page;
+export default Home;
