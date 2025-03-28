@@ -1,5 +1,5 @@
 import '../app/globals.css';
-import ListaUsuarios from "./components/ListaUsuarios";
+import ListaUsuarios from "../components/ListaUsuarios";
 
 function Page() {
   return (
